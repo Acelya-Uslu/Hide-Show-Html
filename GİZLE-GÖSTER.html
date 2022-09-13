@@ -1,0 +1,29 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title GIZLE GOSTER></title>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    </head>
+
+    <div><h2>GİZLE/GÖSTER</h2><p>SOFTWARE</p></div>
+    <div><h2>GİZLE/GÖSTER</h2><p>HARDWARE</p></div>
+    <div><h2>GİZLE/GÖSTER</h2><p>TECHNOLOGY</p></div>
+    <body>
+<script>      
+$(document).ready(function(){
+
+var secici=$("div");
+secici.find("p").css("display","none");
+secici.click(function(){
+
+secici.children("p").slideUp(500);
+$(this).children("p").slideToggle(500);
+
+});
+});
+</script>
+    </body>
+</html>
+
